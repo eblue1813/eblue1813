@@ -1,1 +1,24 @@
-hello world
+hello world!Starting with wireless adb in port 43219...
+
+
+javax.net.ssl.SSLProtocolException: Read error: ssl=0xb40000748088acd8: Failure in SSL library, usually a protocol error
+error:10000416:SSL routines:OPENSSL_internal:SSLV3_ALERT_CERTIFICATE_UNKNOWN (external/boringssl/src/ssl/tls_record.cc:594 0xb4000074a0872b58:0x00000001)
+	at com.android.org.conscrypt.NativeCrypto.ENGINE_SSL_read_direct(Native Method)
+	at com.android.org.conscrypt.NativeSsl.readDirectByteBuffer(NativeSsl.java:569)
+	at com.android.org.conscrypt.ConscryptEngine.readPlaintextDataDirect(ConscryptEngine.java:1095)
+	at com.android.org.conscrypt.ConscryptEngine.readPlaintextData(ConscryptEngine.java:1079)
+	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:876)
+	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:747)
+	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:712)
+	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.processDataFromSocket(ConscryptEngineSocket.java:858)
+	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.readUntilDataAvailable(ConscryptEngineSocket.java:824)
+	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.read(ConscryptEngineSocket.java:797)
+	at java.io.DataInputStream.readFully(DataInputStream.java:198)
+	at rikka.shizuku.U0.b(SourceFile:33)
+	at rikka.shizuku.U0.a(SourceFile:167)
+	at rikka.shizuku.Qs.j(SourceFile:33)
+	at rikka.shizuku.Q4.h(SourceFile:6)
+	at rikka.shizuku.ba.run(SourceFile:102)
+	at rikka.shizuku.A0.run(SourceFile:45)
+	at rikka.shizuku.xp.run(SourceFile:3)
+	at rikka.shizuku.Y7.run(SourceFile:89)
